@@ -67,7 +67,7 @@ func main() {
 
 func mandel(c complex128) float64 {
 	z := complex(0, 0)
-	for i := 0; i < MAX; i++ { // max значение влияет на
+	for i := 0; i < MAX; i++ { // max значение влияет на плавность(значение 10 даёт интересную фигуру)
 		if cmplx.Abs(z) > 2 {
 			return float64(i-1) / MAX
 		}
